@@ -88,5 +88,5 @@ This project provides a complete implementation of the **ASCON128** algorithm in
 ## Author
 
 **Chloé Larroze**  
-Project completed as part of [course/school name]  
+Project completed as part of PCSN course at ISMIN (Mines Saint-Étienne)  
 Date: May 2, 2024

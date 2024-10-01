@@ -1,0 +1,100 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/eleves/home/chloe.larroze/CSN/ASCON
+T_opt2
+!s110 1712576636
+Vz[Fgn0LNR_;ec??6@D4K>1
+=1-bc97e1a36448-6613d87c-c5d09-b125
+o-quiet -auto_acc_if_foreign -work LIB_BENCH -L LIB_RTL
+Z1 tCvgOpt 0
+n@_opt2
+OL;O;2020.4;71
+vPc_tb
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 DXx7 LIB_RTL 10 ascon_pack 0 22 Fn@`EzzDFHaWN9GBaeLN53
+DXx4 work 13 Pc_tb_sv_unit 0 22 bo;?VCJ_B1^nhAbT?YUm;1
+Z4 !s110 1710326258
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 XBP_I6;L?Y>J]@;Z`87<L3
+I`AkNARzXnEO1eWlNaI4S]1
+!s105 Pc_tb_sv_unit
+S1
+R0
+Z6 w1710326249
+Z7 8./SRC/BENCH/Pc_tb.sv
+Z8 F./SRC/BENCH/Pc_tb.sv
+!i122 0
+L0 6 25
+Z9 OL;L;2020.4;71
+31
+Z10 !s108 1710326257.000000
+Z11 !s107 ./SRC/BENCH/Pc_tb.sv|
+Z12 !s90 -L|LIB_RTL|-sv|+acc|-svinputport=net|-work|LIB_BENCH|./SRC/BENCH/Pc_tb.sv|
+!i113 0
+Z13 o-L LIB_RTL -sv +acc -svinputport=net -work LIB_BENCH -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@pc_tb
+XPc_tb_sv_unit
+R2
+R3
+R4
+Vbo;?VCJ_B1^nhAbT?YUm;1
+r1
+!s85 0
+!i10b 1
+!s100 ]e84F`SF6:XhgI@mMYbS:1
+Ibo;?VCJ_B1^nhAbT?YUm;1
+!i103 1
+S1
+R0
+R6
+R7
+R8
+!i122 0
+L0 3 0
+R9
+31
+R10
+R11
+R12
+!i113 0
+R13
+R1
+n@pc_tb_sv_unit
+vSbox_tb
+R2
+!s110 1711113854
+!i10b 1
+!s100 ]XK0`>EeE=[d3APJFBl`W2
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+I=Z41P5Z]KU[67L0;>TEXZ0
+S1
+d/home/chloe.larroze/chloe.larroze/CSN/ASCON
+w1711113825
+8./SRC/BENCH/Sbox_tb.sv
+F./SRC/BENCH/Sbox_tb.sv
+!i122 5
+L0 3 22
+R5
+R9
+r1
+!s85 0
+31
+!s108 1711113854.000000
+!s107 ./SRC/BENCH/Sbox_tb.sv|
+!s90 -sv|+acc|-svinputport=net|-work|LIB_BENCH|./SRC/BENCH/Sbox_tb.sv|
+!i113 0
+o-sv +acc -svinputport=net -work LIB_BENCH -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@sbox_tb

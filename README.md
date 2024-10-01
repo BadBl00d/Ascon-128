@@ -5,6 +5,14 @@ This project involves modeling the **ASCON128 encryption algorithm** using **Sys
 
 This project focuses on designing the core transformations, permutations, and a finite state machine (FSM) that manages the encryption and authentication process. The project also includes validation tests for each component.
 
+**The following explanation is only a summarized version of the project. For more details, feel free to consult the report (in French), which explains the operation of each subcomponent in more detail.**
+
+<p align="center">
+  <img src="./pics/intro.png" alt="Overall ASCON Diagram">
+</p>
+
+
+
 ## Global Operation
 ASCON128 is an encryption and authentication algorithm that works on a message through several blocks:
 
@@ -12,8 +20,6 @@ ASCON128 is an encryption and authentication algorithm that works on a message t
 2. **Permutation Block**: Ensures secure data mixing at each step of the process.
 3. **XOR Blocks**: Apply XOR operations to combine data with the internal state, contributing to data obfuscation.
 4. **Permutation Counters**: Track the number of permutations performed, regulating the flow of the encryption and authentication process.
-
-![Overall ASCON Diagram](./pics/ascon_overview.png)
 
 ## Project Structure
 
@@ -23,9 +29,9 @@ The project is organized into a clear file structure:
 - **/LIB/LIB_RTL**: Stores RTL simulation results.
 - **/LIB/LIB_BENCH**: Stores testbench simulation results.
 
-Example project tree structure:
-TREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE !!!!!!!!!!!!!!!!!!!!!
-
+<p align="center">
+  <img src="./pics/tree.png" alt="Overall ASCON Diagram">
+</p>
 
 ## Design Details
 
@@ -34,18 +40,26 @@ The transformations are essential components of the algorithm. They manipulate t
 - **𝑝𝐶** handles constant addition.
 - **𝑝𝑆** applies substitutions using a custom Sbox.
 
-![Pc and Ps Architecture](./pics/architecture_pc_ps.png)
+<p align="center">
+  <img src="./pics/Pc/Ps.png" alt="Overall ASCON Diagram">
+</p>
 
 ### Linear Diffusion Layer
 Data diffusion is achieved by applying rotations and XORs across the internal state registers.
 
-![Linear Diffusion Layer](./pics/linear_diffusion.png)
+<p align="center">
+  <img src="./pics/Pl.png" alt="Overall ASCON Diagram">
+</p>
+
 
 ### Global Permutation
 
 The permutation is a central element used to transform the internal state through several iterations. It can include optional XOR operations, depending on the encryption mode.
 
-![Global Permutation](./pics/global_permutation.png)
+<p align="center">
+  <img src="./pics/scheme.png" alt="Overall ASCON Diagram">
+</p>
+
 
 ### Finite State Machine (FSM)
 
@@ -59,23 +73,28 @@ The FSM controls the overall encryption and authentication process, transitionin
 5. **Cipher**: Executes encryption operations in a loop.
 6. **Tag**: Calculates the authentication tag.
 
-![FSM Diagram](./pics/fsm_diagram.png)
+<p align="center">
+  <img src="./pics/FSM.png" alt="Overall ASCON Diagram">
+</p>
+
 
 The FSM is essential for managing the encryption phases. It ensures synchronization between steps and handles state transitions.
+
+
+<p align="center">
+  <img src="./pics/ASCON.png" alt="Overall ASCON Diagram">
+</p>
 
 ### FSM Testing
 
 Each FSM state was tested using **testbenches** to ensure correct operation. Below is an example of the result for the **Conf_Init** state after simulation:
 
-![FSM Testbench Result](./pics/fsm_testbench_result.png)
 
 The simulations confirm that the FSM transitions between states correctly and handles the encryption process as expected.
 
 ### Final Results
 
 The final results of the implementation show that the ASCON128 algorithm has been correctly modeled and tested. Each step, from permutations to XOR calculations, works as expected. Below is an example of the results obtained from a complete permutation:
-
-![Complete Permutation Result](./pics/complete_permutation.png)
 
 ### Issues Encountered and Solutions
 

@@ -41,7 +41,7 @@ The transformations are essential components of the algorithm. They manipulate t
 - **𝑝𝑆** applies substitutions using a custom Sbox.
 
 <p align="center">
-  <img src="./pics/Pc/Ps.png" alt="Overall ASCON Diagram">
+  <img src="./pics/Pc:Ps.png" alt="Overall ASCON Diagram">
 </p>
 
 ### Linear Diffusion Layer
